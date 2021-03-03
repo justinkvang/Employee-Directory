@@ -2,8 +2,7 @@ import React from "react";
 import RandomUserContainer from "./components/RandomUserContainer";
 
 function App() {
-  return 
-    <RandomUserContainer />;
+  return <RandomUserContainer />;
 }
 
 export default App;
