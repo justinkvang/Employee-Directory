@@ -1,7 +1,6 @@
 import React from "react";
 
 function ResultList(props) {
-    console.log(props);
   return (
     <ul className="list-group">
       {props.results.map(result => (
