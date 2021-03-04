@@ -1,8 +1,8 @@
 import React from "react";
-import RandomUserContainer from "./components/RandomUserContainer";
+import RandomUser from "./components/RandomUser";
 
 function App() {
-  return <RandomUserContainer />;
+  return <RandomUser />;
 }
 
 export default App;

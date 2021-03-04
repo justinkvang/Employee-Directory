@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import ResultList from "./ResultList";
 import API from "../utils/API";
 import Navbar from "./Navbar";
 import BodyContainer from "./BodyContainer";
 
-class RandomUserContainer extends Component {
+class RandomUser extends Component {
   state = {
-    search: "",
-    results: []
+    user: []
   };
 
   // When this component mounts, search the Giphy API for pictures of kittens
@@ -52,4 +50,4 @@ class RandomUserContainer extends Component {
   }
 }
 
-export default RandomUserContainer;
+export default RandomUser;
