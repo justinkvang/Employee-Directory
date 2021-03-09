@@ -1,8 +1,16 @@
 import React from "react";
-import RandomUser from "./components/RandomUser";
+import Navbar from "./components/Navbar";
+import MainContainer from "./components/MainContainer";
+import "./components/style.css"
 
 function App() {
-  return <RandomUser />;
+  return (
+    <div className="App">
+      <Navbar />
+      <MainContainer />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
