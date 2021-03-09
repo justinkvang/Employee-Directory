@@ -4,7 +4,7 @@ import Table from "./Table";
 
 function MainContainer() {
     const [users, setUsers] = useState([])
-    cosnt [SearchForm, setSearch] = useState("")
+    const [search, setSearch] = useState("")
 
     useEffect(() => {
         getRandomUsers()
@@ -16,7 +16,7 @@ function MainContainer() {
     }
 
     function getSearchResults() {
-        const searchedUser = user.filter(user => search.indexOf(user.name.first)> -1 || search.indexOf(user.name.last)> -1)
+        const searchedUser = users.filter(user => search.indexOf(user.name.first)> -1 || search.indexOf(user.name.last)> -1)
         setUsers(searchedUser)
     }
 
@@ -43,7 +43,7 @@ function MainContainer() {
                 <button className="btn btn-outline-danger" onClick={clearSearch}><i class="fas fa-window-close"></i></button>
                 <button onClick={handleFormSubmit} className="btn btn-outline-primary" type="submit" id="button-addon2">Search</button>
             </div>
-            <Table list={users} sortEmail={sortEmail} sortNumber={sortNumber}/>
+            <Table list={users}/>
         </div>
     )
 }
